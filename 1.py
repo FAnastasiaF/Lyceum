@@ -7,7 +7,7 @@ w =  int(input())
 ids = input()
 session = vk.Session()
 vk_api = vk.API(session, v = '5.35')
-session = vk.AuthSession('6092811', '+79161963528', 'zoloto1997', scope='wall, messages, friends')
+session = vk.AuthSession('6092811', 'login', 'password', scope='wall, messages, friends')
 vk_api = vk.API(session, v = '5.35')
 r = vk_api.users.get(user_id = ids)
 h = r[0]
